@@ -1,13 +1,11 @@
 # Read about factories at https://github.com/thoughtbot/factory_girl
 
 FactoryGirl.define do
-  factory :pessoa do
-    nome "MyString"
-    cpf 1
+  factory :local do
     uf "MyString"
     cidade "MyString"
     endereco "MyString"
-    email "MyString"
-    matricula 1
+    complemento "MyString"
+    status "MyString"
   end
 end

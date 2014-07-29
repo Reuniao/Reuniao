@@ -8,7 +8,7 @@ RSpec.describe "pessoas/edit", :type => :view do
       :uf => "MyString",
       :cidade => "MyString",
       :endereco => "MyString",
-      :e-mail => "MyString",
+      :email => "MyString",
       :matricula => 1
     ))
   end
@@ -28,7 +28,7 @@ RSpec.describe "pessoas/edit", :type => :view do
 
       assert_select "input#pessoa_endereco[name=?]", "pessoa[endereco]"
 
-      assert_select "input#pessoa_e-mail[name=?]", "pessoa[e-mail]"
+      assert_select "input#pessoa_email[name=?]", "pessoa[email]"
 
       assert_select "input#pessoa_matricula[name=?]", "pessoa[matricula]"
     end

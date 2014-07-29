@@ -6,7 +6,7 @@ class CreatePessoas < ActiveRecord::Migration
       t.string :uf
       t.string :cidade
       t.string :endereco
-      t.string :e-mail
+      t.string :email
       t.integer :matricula
 
       t.timestamps

@@ -9,7 +9,7 @@ RSpec.describe "pessoas/index", :type => :view do
         :uf => "Uf",
         :cidade => "Cidade",
         :endereco => "Endereco",
-        :e-mail => "E Mail",
+        :email => "Email",
         :matricula => 2
       ),
       Pessoa.create!(
@@ -18,7 +18,7 @@ RSpec.describe "pessoas/index", :type => :view do
         :uf => "Uf",
         :cidade => "Cidade",
         :endereco => "Endereco",
-        :e-mail => "E Mail",
+        :email => "Email",
         :matricula => 2
       )
     ])
@@ -31,7 +31,7 @@ RSpec.describe "pessoas/index", :type => :view do
     assert_select "tr>td", :text => "Uf".to_s, :count => 2
     assert_select "tr>td", :text => "Cidade".to_s, :count => 2
     assert_select "tr>td", :text => "Endereco".to_s, :count => 2
-    assert_select "tr>td", :text => "E Mail".to_s, :count => 2
+    assert_select "tr>td", :text => "Email".to_s, :count => 2
     assert_select "tr>td", :text => 2.to_s, :count => 2
   end
 end
